@@ -1,5 +1,5 @@
 ---
-layout: aurora
+layout: home
 title: About Us
 ---
 # What is Aurora?
