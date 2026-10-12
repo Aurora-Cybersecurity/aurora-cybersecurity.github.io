@@ -1,0 +1,26 @@
+# Each offering appears as a card in "What we can do together".
+# bars: heights (px) of the small aurora glyph above the title — purely decorative.
+
+- title: Threat Modeling
+  description: Determine which threats face your organization through a systematic approach. Aurora specializes in threat modeling exercises, methodology, and program development.
+  bars: [9, 16, 24, 28, 20]
+
+- title: Cloud Security
+  description: Configuration reviews, architecture development, and advisory services for your cloud environments.
+  bars: [20, 26, 18, 12, 22]
+
+- title: Detection Engineering & Response Planning
+  description: Develop detection use cases together with the response workflows that act on them.
+  bars: [12, 20, 28, 22, 14]
+
+- title: Threat Hunting
+  description: Establish and execute repeatable threat hunts to help uncover threat actors within your organization.
+  bars: [26, 18, 10, 18, 26]
+
+- title: Application & DevOps Security
+  description: Find where security belongs in your development workflows, across design, development, and deployment.
+  bars: [10, 14, 20, 26, 28]
+
+- title: Hands-On Training
+  description: Elevate your team's skillsets through customized, hands-on workshops.
+  bars: [16, 24, 16, 24, 16]

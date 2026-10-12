@@ -1,30 +1,6 @@
-<footer class="site-footer h-card">
-<img src="/assets/aurora-footer.png">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-              {{ site.title | escape }}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">{{ site.time | date: "%Y" }}</span> {{ site.title }}</span>
+    <a href="https://github.com/{{ site.github_org }}" target="_blank" rel="noopener">github.com/{{ site.github_org }}</a>
   </div>
-
 </footer>

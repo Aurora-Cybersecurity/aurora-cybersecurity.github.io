@@ -1,0 +1,92 @@
+---
+layout: default
+---
+{%- assign h = site.data.home -%}
+<header class="hero" id="top">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="curtain" id="curtain" aria-hidden="true"></div>
+  <div class="wrap">
+    <h1>{{ h.hero.heading_before }} <em>{{ h.hero.heading_highlight }}</em> {{ h.hero.heading_after }}</h1>
+    <p class="lede">{{ h.hero.lede }}</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">{{ h.hero.primary_button }}</a>
+      <a class="btn btn-ghost" href="#offerings">{{ h.hero.secondary_button }}</a>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">{{ h.about.eyebrow }}</p>
+      <h2>{{ h.about.heading }}</h2>
+    </div>
+    <div>
+      {%- for p in h.about.paragraphs %}
+      {{ p | markdownify }}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="who" id="team">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">{{ h.team.eyebrow }}</p>
+      <p class="stat"><span>{{ h.team.stat }}</span></p>
+      <p class="stat-label">{{ h.team.stat_label }}</p>
+    </div>
+    <div>
+      <h2>{{ h.team.heading }}</h2>
+      {%- for p in h.team.paragraphs %}
+      {{ p | markdownify }}
+      {%- endfor %}
+      <ul class="creds">
+        {%- for e in h.team.previous_employers %}
+        <li>{{ e }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="offerings">
+  <div class="wrap">
+    <div class="offer-head">
+      <div>
+        <p class="eyebrow">{{ h.offerings.eyebrow }}</p>
+        <h2>{{ h.offerings.heading }}</h2>
+      </div>
+      <p>{{ h.offerings.intro }}</p>
+    </div>
+    <div class="grid">
+      {%- for o in site.data.offerings %}
+      <article class="card">
+        <div class="glyph" data-h="{{ o.bars | join: ',' }}"></div>
+        <h3>{{ o.title | escape }}</h3>
+        <p>{{ o.description | escape }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+    <div class="custom">
+      <p>{{ h.offerings.custom_text }} <span>{{ h.offerings.custom_subtext }}</span></p>
+      <a href="{{ site.booking_url }}" target="_blank" rel="noopener">{{ h.offerings.custom_link }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap contact-box">
+    <div>
+      <p class="eyebrow">{{ h.contact.eyebrow }}</p>
+      <h2>{{ h.contact.heading }}</h2>
+      <p>{{ h.contact.text }}</p>
+      <div class="btns"><a class="btn btn-primary" href="{{ site.booking_url }}" target="_blank" rel="noopener">{{ h.contact.button }}</a></div>
+    </div>
+    <dl class="direct">
+      <div><dt>Email</dt><dd><a id="email" href="mailto:{{ site.email }}">{{ site.email }}</a><button class="copy" type="button" id="copy-email" data-target="email">Copy</button></dd></div>
+      <div><dt>GitHub</dt><dd><a href="https://github.com/{{ site.github_org }}" target="_blank" rel="noopener">{{ site.github_org }}</a></dd></div>
+    </dl>
+  </div>
+</section>

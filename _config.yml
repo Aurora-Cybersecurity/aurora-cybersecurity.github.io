@@ -1,53 +1,39 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Aurora Cybersecurity — site settings
+# Restart `bundle exec jekyll serve` after editing this file.
 
 title: Aurora Cybersecurity
+tagline: Cybersecurity consulting
+description: "Boutique cybersecurity consulting: threat modeling, cloud, application and DevOps security."
+url: "https://auroracyber.ca"
+baseurl: ""
+
+# Contact details used across the site
 email: hello@auroracyber.ca
-description: >- # this means to ignore newlines until "baseurl:"
-  Winnipeg's premier cybersecurity consulting services
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://auroracyber.ca" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-github_username:  Aurora-Cybersecurity
+github_org: Aurora-Cybersecurity
+booking_url: "https://calendly.com/auroracybersecurity-pm/30min"
 
-# Build settings
-theme: minima
+# Social sharing defaults (used by jekyll-seo-tag)
+logo: /assets/images/icon-512.png
+image:
+  path: /assets/images/og-image.png
+  width: 1200
+  height: 630
+  alt: Aurora Cybersecurity wordmark over a northern-lights night sky
+twitter:
+  card: summary_large_image
+social:
+  name: Aurora Cybersecurity
+  links:
+    - https://github.com/Aurora-Cybersecurity
+
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Keep build tooling and docs out of the published site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - brand
