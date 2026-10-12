@@ -1,0 +1,44 @@
+# Homepage copy. Paragraphs support Markdown (**bold**, [links](https://...)).
+
+hero:
+  heading_before: "Security attuned to"
+  heading_highlight: "your"
+  heading_after: "environment."
+  lede: Aurora Cybersecurity is a boutique consulting firm specializing in advisory, strategy development, application, cloud, and DevOps security, built on threat modeling.
+  primary_button: Schedule a free consultation →
+  secondary_button: See our offerings
+
+about:
+  eyebrow: What is Aurora?
+  heading: Every organization is unique. Your security should be too.
+  paragraphs:
+    - Aurora Cybersecurity is a boutique cybersecurity consulting firm that specializes in **advisory, strategy development, application, cloud, and DevOps security**.
+    - Because no two environments are alike, Aurora uses **threat modeling** to make sure every recommendation, strategy, and solution fits the threats you actually face, not a generic checklist.
+
+team:
+  eyebrow: Who is Aurora?
+  stat: "10+"
+  stat_label: years of experience serving organizations across industries
+  heading: Practitioners from the front lines of security.
+  paragraphs:
+    - Aurora's team brings strong backgrounds in **system administration, architecture, incident response, security operations, cloud, and application security**.
+    - "Our people have previously worked for:"
+  previous_employers:
+    - Mandiant (a Google Cloud company)
+    - Canadian financial institutions
+    - Public sector organizations
+    - Startups
+
+offerings:
+  eyebrow: Aurora's offerings
+  heading: What we can do together
+  intro: Six specialties, each shaped by a threat model of your organization.
+  custom_text: Don't see an offering aligned with your needs?
+  custom_subtext: Aurora's diverse skillset has you covered.
+  custom_link: Ask about custom solutions →
+
+contact:
+  eyebrow: Get started
+  heading: Curious how Aurora can help you?
+  text: Book a free 30-minute consultation. We'll talk through your environment, your concerns, and where a threat-informed approach can make the biggest difference.
+  button: Schedule a free consultation →
